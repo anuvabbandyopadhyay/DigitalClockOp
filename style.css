@@ -37,7 +37,7 @@ html {
   font-size: 10px;
 }
 
-body {
+/* body {
   margin: 0;
   font-size: 2rem;
   display: flex;
@@ -85,4 +85,4 @@ body {
   background: #1df52f;
   z-index: 0;
   left: 49%;
-}
+} */

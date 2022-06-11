@@ -36,7 +36,7 @@ let sc = document.querySelector('#sc')
 
 setInterval(() =>{
   let day = new Date();
-  let hh = get.getHour() * 30;
+  let hh = day.getHour() * 30;
   let mm = day.getMinute() * 6;
   let ss = day.getMinute() * 6;
   hr.style.transform = `rotateZ(${hh+(mn/12)}deg)`

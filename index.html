@@ -8,9 +8,9 @@
   <body>
     <div class ="container">
       <div class="clock">
-        <div class="circle" id="sc" style="--clr:#84fc43;"><<i></i></div>
+        <div class="circle" id="sc" style="--clr:#84fc43;"><i></i></div>
         <div class="circle circle2" id="mn"
-        style="--clr:#fee800;"><i></i></div>
+        style="--clr:#fee800;" ><i></i></div>
         <div class="circle circle3" id="hr"
         style="--clr:#ff2972;"><i></i></div>
 
@@ -29,15 +29,15 @@
 
         </div>
         <div id="time">
-          <div id="hour">00</div>
-          <div id="minutes">00</div>
-          <div id="seconds">00</div>
-          <div id="ampm">00</div>
+          <div id="hour" style="--clr:#ff2972";>00</div>
+          <div id="minutes"  style="--clr:#fee800">00</div>
+          <div id="seconds"  style="--clr:#84fc43">00</div>
+          <div id="ampm">AM</div>
         </div>
       </div>
 
   <script>
-    let hr = document.querySelector('#hr');
+let hr = document.querySelector('#hr');
 let mn = document.querySelector('#mn');
 let sc = document.querySelector('#sc')
 
@@ -46,7 +46,7 @@ setInterval(() =>{
   let hh = day.getHours() * 30;
   let mm = day.getMinutes() * 6;
   let ss = day.getSeconds() * 6;
-  hr.style.transform = `rotateZ(${hh+(mn/12)}deg)`
+  hr.style.transform = `rotateZ(${hh+(mm/12)}deg)`
   mn.style.transform = `rotateZ(${mm}deg)`
   sc.style.transform = `rotateZ(${ss}deg)`
 
@@ -56,7 +56,7 @@ setInterval(() =>{
   let ampm = document.getElementById('ampm');
 
   let h = new Date().getHours();
-  let m = new Date().getMinute();
+  let m = new Date().getMinutes();
   let s = new Date().getHours();
 
   if (h>12) {

@@ -28,7 +28,14 @@
         <span style="--i:12;"><b>12</b></span>
 
         </div>
+        <div id="time">
+          <div id="hour">00</div>
+          <div id="minutes">00</div>
+          <div id="seconds">00</div>
+          <div id="ampm">00</div>
+        </div>
       </div>
+
   <script>
     let hr = document.querySelector('#hr');
 let mn = document.querySelector('#mn');
@@ -36,9 +43,9 @@ let sc = document.querySelector('#sc')
 
 setInterval(() =>{
   let day = new Date();
-  let hh = day.getHour() * 30;
-  let mm = day.getMinute() * 6;
-  let ss = day.getMinute() * 6;
+  let hh = day.getHours() * 30;
+  let mm = day.getMinutes() * 6;
+  let ss = day.getSeconds() * 6;
   hr.style.transform = `rotateZ(${hh+(mn/12)}deg)`
   mn.style.transform = `rotateZ(${mm}deg)`
   sc.style.transform = `rotateZ(${ss}deg)`
@@ -50,7 +57,7 @@ setInterval(() =>{
 
   let h = new Date().getHours();
   let m = new Date().getMinute();
-  let s = new Date().getUTCHours();
+  let s = new Date().getHours();
 
   if (h>12) {
     h = h-12

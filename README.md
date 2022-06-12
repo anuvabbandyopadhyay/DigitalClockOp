@@ -16,6 +16,6 @@ Clock which we designed in dark theme.We learned about css designing and element
 
 ## Platforms that helped us 
 ## Author info
-Anuvab Bandyopadhyay
+![alt text](http://url/to/img.png)Anuvab Bandyopadhyay
 
 Aswath Mittal
